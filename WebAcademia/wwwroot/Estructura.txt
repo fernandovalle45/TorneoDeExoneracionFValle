@@ -1,0 +1,27 @@
+Estructura de archivos y carpetas
+
+WebAcademia/
+├── Controllers/
+├── Models/
+├── Views/
+├── wwwroot/
+├── Program.cs
+└── appsettings.json
+
+Controllers:
+Carpeta, es en donde van los archivos controlador del programa. Un controlador es un intermediario entre los modelos y las vistas, recibe las acciones del usuario a través del navegador o la app, solicita los datos a los modelos y los envia a las vistas para que el usuario pueda verlas.
+
+Models: 
+Carpeta, es en donde van los archivos de modelo del programa. Los modelos se encargan de los datos y la lógica de negocio de la app, se conecta directamente con la base de datos para guardar, obtener o modificar los datos. Es indiferente al estilo visual de la app.
+
+Views:
+Carpeta, es en donde van los archivos de vista del programa, estos archivos son los que se encargan de mostrar los elementos visuales y la interfaz de usuario, por lo tanto son archivos escritos en HTML y CSS. Las vistas muestran al usuario los datos recibidos desde el modelo, y envia los inputs del usuario al controlador.
+
+wwwroot:
+Carpeta, es el lugar designado de acceso publico donde todos los assets estáticos de la aplicación se almacenan y se presentan directamente al browser. Estos assets pueden ser HTML, CSS, JavaScript, imágenes y fuentes, y el navegador tiene acceso a todo esto, por ejemplo, si tenemos un logo.png, la ruta completa es wwwroot/logo.png, pero es accesible desde el navegador o HTML con la ruta /logo.png, sin necesidad del wwwroot en la URL.
+
+Program.cs:
+Archivo, es el punto de entrada de la aplicación .NET, cada que se ejecuta el programa .NET siempre empezara desde el Program.cs.
+
+appsettings.json:
+Archivo, es el archivo de configuración central usado en aplicaciones .NET y ASP.NET Core. Actúa como un almacén de texto plano para configuraciones de almacenamiento, variables, y feature toggles, manteniéndolos aislados del resto del código C# compilado.
