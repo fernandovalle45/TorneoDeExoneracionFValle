@@ -8,6 +8,11 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
+        ViewData["NombreEstudiante"] = "Fernando Emilio Valle Bernal";
+        ViewData["Carrera"] = "Ingeniería en Desarrollo de Software";
+        ViewData["Materia"] = "Desarrollo Multiplataforma de Aplicaciones Web";
+        ViewData["Seccion"] = "A";
+
         return View();
     }
 
